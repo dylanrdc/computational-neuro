@@ -13,7 +13,42 @@ Features
 	-	Membrane resistance (R)
 	-	Membrane time constant (τ)
 	-	Resting potential (V_rest)
-	-	Threshold voltage (V_th)
+
+INSTALLATION
+1. Clone the repository:
+   git clone https://github.com/dylanrdc/computational-neuro.git
+   cd computational-neuro
+
+2. (Optional) Create a virtual environment:
+   python -m venv venv
+   source venv/bin/activate   # macOS/Linux
+   venv\Scripts\activate      # Windows
+
+3. Install dependencies:
+	- Listed at bottom
+
+USAGE
+Run the LIF neuron simulation:
+   python LIF_model/lif_neuron.py
+
+This will generate plots that show:
+- Membrane potential over time
+- Spike raster output
+
+You can adjust model parameters directly in the script to see how they affect neuron behavior.
+
+PROJECT STRUCTURE
+computational-neuro/
+- LIF_model/         : Python implementation of the LIF model
+  - lif_neuron.py
+- venv/              : Virtual environment (ignored in Git)
+- README.txt
+- requirements.txt
+
+REQUIREMENTS
+- Python 3.9+
+- Packages: numpy, matplotlib
+(All dependencies listed in requirements.txt)	-	Threshold voltage (V_th)
 	-	Input current (I(t))
 	-	Generates plots of membrane potential over time and spike raster output.
 	-	Modular code that can be extended to networks of neurons
@@ -48,12 +83,10 @@ computational-neuro/
   - lif_neuron.py
 - venv/              : Virtual environment (ignored in Git)
 - README.txt
-- requirements.txt
 
 Reqs
 - Python 3.9+
 - Packages: numpy, matplotlib
-(All dependencies listed in requirements.txt)
 
 References
 	-	Dayan, P., & Abbott, L. F. (2001). Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems.
