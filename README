@@ -7,16 +7,53 @@ This project implements the Leaky Integrate-and-Fire (LIF) neuron model, one of 
 The goal of this project is to explore how changes in input current and model parameters affect spiking behavior, and to build a foundation for understanding more complex neural models.
 
 Features
-	•	Simulates the differential equation governing the LIF model:
+	-	Simulates the differential equation governing the LIF model:
 		τ(dV/dt) = -(V - V_rest) + R*I(t)
-	•	Adjustable parameters:
-	•	Membrane resistance (R)
-	•	Membrane time constant (τ)
-	•	Resting potential (V_rest)
-	•	Threshold voltage (V_th)
-	•	Input current (I(t))
-	•	Generates plots of membrane potential over time and spike raster output.
-	•	Modular code that can be extended to networks of neurons
+	-	Adjustable parameters:
+	-	Membrane resistance (R)
+	-	Membrane time constant (τ)
+	-	Resting potential (V_rest)
+	-	Threshold voltage (V_th)
+	-	Input current (I(t))
+	-	Generates plots of membrane potential over time and spike raster output.
+	-	Modular code that can be extended to networks of neurons
+
+
+Installation
+1. Clone the repository:
+   git clone https://github.com/dylanrdc/computational-neuro.git
+   cd computational-neuro
+
+2. (Optional) Create a virtual environment:
+   python -m venv venv
+   source venv/bin/activate   # macOS/Linux
+   venv\Scripts\activate      # Windows
+
+3. Install dependencies:
+   pip install -r requirements.txt
+
+Use
+Run the LIF neuron simulation:
+   python LIF_model/lif_neuron.py
+
+This will generate plots showing:
+- Membrane potential over time
+- Spike raster output
+
+You can adjust model parameters directly in the script to see how they affect neuron behavior.
+
+Structure
+computational-neuro/
+- LIF_model/         : Python implementation of the LIF model
+  - lif_neuron.py
+- venv/              : Virtual environment (ignored in Git)
+- README.txt
+- requirements.txt
+
+Reqs
+- Python 3.9+
+- Packages: numpy, matplotlib
+(All dependencies listed in requirements.txt)
 
 References
-	•	Dayan, P., & Abbott, L. F. (2001). Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems.
+	-	Dayan, P., & Abbott, L. F. (2001). Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems.
