@@ -1,0 +1,22 @@
+Project Title: Leaky Integrate-and-Fire Neuron Model
+
+Overview
+
+This project implements the Leaky Integrate-and-Fire (LIF) neuron model, one of the simplest and most widely used models in computational neuroscience. It simulates how neurons integrate incoming currents and fire action potentials once the membrane potential reaches a threshold.
+
+The goal of this project is to explore how changes in input current and model parameters affect spiking behavior, and to build a foundation for understanding more complex neural models.
+
+Features
+	•	Simulates the differential equation governing the LIF model:
+		τ(dV/dt) = -(V - V_rest) + R*I(t)
+	•	Adjustable parameters:
+	•	Membrane resistance (R)
+	•	Membrane time constant (τ)
+	•	Resting potential (V_rest)
+	•	Threshold voltage (V_th)
+	•	Input current (I(t))
+	•	Generates plots of membrane potential over time and spike raster output.
+	•	Modular code that can be extended to networks of neurons
+
+References
+	•	Dayan, P., & Abbott, L. F. (2001). Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems.
